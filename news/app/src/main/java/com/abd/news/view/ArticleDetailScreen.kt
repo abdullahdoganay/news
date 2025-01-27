@@ -1,4 +1,4 @@
-package com.abd.news
+package com.abd.news.view
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap

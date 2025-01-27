@@ -1,6 +1,6 @@
 package com.abd.news.navigation
 
-import com.abd.news.ArticleDetailScreen
+import com.abd.news.view.ArticleDetailScreen
 import androidx.compose.runtime.Composable
 
 import androidx.navigation.NavHostController
