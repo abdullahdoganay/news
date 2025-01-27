@@ -32,7 +32,7 @@ import com.abd.news.model.Article
 import com.abd.news.viewmodel.HomeScreenViewModel
 
 @Composable
-fun NewsCard(article: Article, viewModel: HomeScreenViewModel, onFavoriteClick: () -> Unit, onArticleClick: (Article) -> Unit) {
+fun ArticleCard(article: Article, viewModel: HomeScreenViewModel, onFavoriteClick: () -> Unit, onArticleClick: (Article) -> Unit) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier

@@ -1,6 +1,6 @@
 package com.abd.news.view
 
-import NewsCard
+import ArticleCard
 import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -59,7 +59,7 @@ import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun NewsScreen(
+fun HomeScreen(
     modifier: Modifier = Modifier,
     viewModel: HomeScreenViewModel,
     onArticleClick: (Article) -> Unit
@@ -197,7 +197,7 @@ fun NewsScreen(
                     .padding(innerPadding)
             ) {
                 items(articles) { article ->
-                    NewsCard(
+                    ArticleCard(
                         article = article,
                         viewModel = viewModel,
                         onFavoriteClick = {

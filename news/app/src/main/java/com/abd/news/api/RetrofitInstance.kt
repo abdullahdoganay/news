@@ -1,4 +1,4 @@
-import com.abd.news.api.NewsAPI
+import com.abd.news.api.ArticlesAPI
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -24,5 +24,5 @@ object RetrofitInstance {
             .build()
     }
 
-    val api: NewsAPI = getRetrofitInstance().create(NewsAPI::class.java)
+    val api: ArticlesAPI = getRetrofitInstance().create(ArticlesAPI::class.java)
 }

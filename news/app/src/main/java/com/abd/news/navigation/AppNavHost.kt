@@ -7,7 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.abd.news.model.Article
-import com.abd.news.view.NewsScreen
+import com.abd.news.view.HomeScreen
 import com.abd.news.viewmodel.HomeScreenViewModel
 
 
@@ -21,7 +21,7 @@ fun AppNavHost(
         startDestination = NavigationItem.Home.route
     ) {
         composable(NavigationItem.Home.route) {
-            NewsScreen(
+            HomeScreen(
                 viewModel = viewModel,
                 onArticleClick = { article ->
                     navController.currentBackStackEntry?.savedStateHandle?.set("article", article)
